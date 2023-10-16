@@ -1,0 +1,533 @@
+html,body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.05)), url("../images/backgroundImg.png");
+    height: 100vh;
+    object-fit: cover;
+}
+
+.center {
+    margin: auto;
+}
+
+nav img {
+    width: 167px;
+    vertical-align: middle;
+}
+
+nav a.logo{
+    display: inline-block;
+    line-height: 90px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+header nav {
+    height: 90px;
+}
+
+nav .signin {
+    color: #fff;
+    float: right;
+    background-color: #e50914;
+    line-height: normal;
+    margin-top: 4%;
+    margin-right: 10%;
+    padding: 7px 17px;
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.pitch {
+    margin: 0.3%;
+    margin-left: 10%;
+    margin-top: 4%;
+    position: absolute;
+    top: 35%;
+    font-size: 1.8vw;
+}
+
+.pitch-title{
+    font-size: 5rem;
+    margin: 0 0 0.2rem;
+    font-weight: 700;
+}
+
+.pitch-subtitle {
+    margin: 0 0 .5em;
+    font-size: 1.5rem;
+}
+
+.btn {
+    font-size: 14px;
+    letter-spacing: 1.9px;
+    font-weight: 400;
+    margin: .5em .5em .5em 0;
+    padding: 12px 2em;
+    color: #fff;
+    background-color: #e50914;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    user-select: none;
+    text-align: center;
+    border: 0;
+}
+
+.btn-large{
+    padding: 18px 20px;
+}
+
+nav .signin:hover, .btn:hover {
+    background: #b1040d;
+}
+
+#features > nav {
+    padding-top: 35px;
+    background-color: #141414;
+    border-bottom: 2px solid #3b3b3b;
+}
+
+#features > nav a {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    color: #777;
+    height: 125px;
+    line-height: 20px;
+}
+
+#features > nav a:hover{
+    color: white;
+}
+
+#features > nav a img {
+    height: 40%;
+    width: auto;
+}
+
+#features > nav a h2 {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.columns {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    
+}
+
+/* .columns.flex-wrap {
+    flex-wrap: wrap;
+} */
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* .column.is-25{
+    flex: none;
+    width: 50%;
+}
+
+.column.is-narrow {
+flex: none;
+} */
+
+.size-90{
+width: 90%;
+}
+
+.size-70 {
+    width: 70%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#features > nav a.is-selected{
+    border-bottom: 5px solid #e50914;
+    color: white;
+}
+
+#features > article {
+    margin-bottom: 120px;
+}
+
+.if-you-decide{
+    font-size: 2.5rem;
+}
+
+#features > article{
+    font-size: 32px;
+    font-weight: 400;
+    margin: 60px 0 20px;
+}
+
+#features img {
+    width: 100%;
+}
+
+#features #watchanywhere h2 {
+    font-size: 2rem;
+    padding-right: 1rem;
+    margin: 0 0 20px;
+}
+
+
+#features #watchanywhere > div:first-child{
+    margin-bottom: 60px;
+}
+#features #watchanywhere > div > div  > img {
+    width: 80%;
+}
+
+#features #watchanywhere h3{
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+}
+#features #watchanywhere p {
+    font-size: 1.5rem;
+    color: #999;
+    width: 70%;
+    margin: auto;
+    padding-top: 4px;
+}
+#features > article > section {
+    display: none;
+    padding: 40px 0;
+}
+
+#features > article > section.is-selected{
+    display: block;
+}
+
+#features #pick-price h2 {
+    font-size: 1.6rem;
+    display: inline;
+    margin: 0 40px 0 0;
+}
+
+table {
+    width: 100%;
+    margin-top: 7rem;
+}
+
+table, thead, tbody {
+    border-collapse: collapse;
+}
+
+thead{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody {
+    color: #999;
+    font-size: 16px;
+}
+
+tbody td {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+tbody tr:nth-child(2n){
+    background-color: #222;
+}
+
+tbody td:first-child{
+    text-align: left;
+}
+
+footer a {
+    color: #999;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer > p {
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+}
+
+
+.footer-width{
+width: 90%;
+display: flex;
+justify-content: space-between;
+margin: auto;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background: #999;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+footer > ul > div > li {
+    list-style: none;
+    margin: 0 0 16px;
+    padding-right: 12px;
+    min-width: 100px;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1024px) {
+    #features #watchanywhere h2 {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+        margin: 0 0 20px;
+    }
+
+    #features #watchanywhere h3{
+        font-size: 1.5rem;
+    }
+    #features #watchanywhere p {
+        font-size: 1.2rem;
+    }
+
+    footer > p {
+        margin-left: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    header {
+        height: 50vh;
+    }
+
+    .pitch {
+        top: 20%;
+    }
+    
+    .pitch-title{
+        font-size: 4rem;
+    }
+
+    #features #watchanywhere h2 {
+        font-size: 1.2rem;
+    }
+
+    #features #watchanywhere h3{
+        font-size: 1.2rem;
+    }
+    #features #watchanywhere p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    
+    nav img {
+        width: 100px;
+        vertical-align: middle;
+    }
+    
+    nav a.logo{
+        margin-left: 5%;
+        margin-top: -3%;
+    }
+    
+    nav .signin {
+        margin-right: 5%;
+    }
+    
+    .pitch {
+        margin-left: 5%;
+        top: 20%;
+    }
+    
+    .pitch-title{
+        font-size: 2rem;
+    }
+    
+    .pitch-subtitle {
+        margin: 0 0 .5em;
+        font-size: 1rem;
+    }
+    
+    .btn {
+        font-size: 12px;
+        padding: 10px 1em;
+    }
+    
+    #features > nav {
+        padding-top: 20px;
+    }
+    
+    #features > nav a {
+        height: 80px;
+        line-height: 10px;
+    }
+    #features > nav a img {
+        height: 25%;
+        width: auto;
+    }
+    
+    #features > nav a h2 {
+        margin: 5px 0 0;
+        font-size: .5em;
+    }
+    
+    .columns {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        
+    }
+
+    #features > article {
+        margin-bottom: 20px;
+        margin-top: -.7rem;
+    }
+    
+    .section1 {
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+    }
+
+    .if-you-decide{
+    font-size: 1.2rem;
+    text-align: center;
+    }
+
+    .section1>div>button{
+        margin: .5em .5em .5em .5em;
+        padding: 12px 2em;
+    }
+
+    .section1>div>img{
+        margin-top: 2rem;
+    }
+
+    .section2{
+        flex-direction: column;
+    }
+
+    #features #watchanywhere h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .section2-tag{
+        flex-direction: column;
+        margin-top: -2rem;
+    }
+
+    .section2-tag>div{
+        margin-bottom: 1rem;
+    }
+    #features #watchanywhere > div > div  > img {
+        width: 100%;
+    }
+    #features #watchanywhere h3{
+        font-size: 1.5rem;
+    }
+    #features #watchanywhere p {
+        font-size: 1.2rem;
+    }
+
+    #features #pick-price h2 {
+        font-size: 1.6rem;
+        display: flex;
+        margin: 0 0px 0 0;
+    }
+    
+    #pick-price{
+    width: 85%;
+    }
+
+    table {
+        margin-top: 2rem;
+    }
+    
+    table, thead, tbody {
+        border-collapse: collapse;
+    }
+    
+    thead{
+        color: white;
+        font-size: 8px;
+        text-transform: uppercase;
+    }
+    
+    thead th {
+        padding: 2px;
+    }
+    
+    tbody {
+        color: #999;
+        font-size: 8px;
+    }
+    
+    tbody td {
+        text-align: center;
+        padding: 5px 5px;
+    }
+    
+    tbody tr:nth-child(2n){
+        background-color: #222;
+    }
+    
+    tbody td:first-child{
+        text-align: left;
+    }
+
+    footer > p {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .footer-width{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        flex-direction: column;
+        }
+        
+        .line {
+            height: 1px;
+        }
+        
+        footer > ul > div > li {
+            list-style: none;
+            margin: 0 0 10px;
+            padding-right: 12px;
+            min-width: 100px;
+            font-size: 13px;
+        }
+}
